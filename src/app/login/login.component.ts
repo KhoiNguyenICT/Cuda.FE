@@ -1,5 +1,5 @@
 import { SessionService } from './../core/services/session.service'
-import { Component, OnInit } from '@angular/core'
+import { Component, OnInit, AfterViewInit, AfterContentInit } from '@angular/core'
 import { ActivatedRoute, Params, Router } from '@angular/router'
 import * as jwtDecode from 'jwt-decode'
 
@@ -8,6 +8,7 @@ import * as jwtDecode from 'jwt-decode'
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
+
 export class LoginComponent implements OnInit {
 
   token: string

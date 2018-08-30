@@ -1,3 +1,5 @@
+import { SessionService } from './services/session.service'
+import { AuthService } from './services/auth.service'
 import { RouterModule } from '@angular/router'
 import { NgModule } from '@angular/core'
 import { CommonModule } from '@angular/common'
@@ -25,6 +27,10 @@ import { BreadcrumbComponent } from './layout/breadcrumb/breadcrumb.component'
     SidebarComponent,
     SidebarSearchComponent,
     BreadcrumbComponent
+  ],
+  providers: [
+    AuthService,
+    SessionService
   ]
 })
 export class CoreModule { }
