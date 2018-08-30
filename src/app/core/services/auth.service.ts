@@ -25,7 +25,7 @@ export class AuthService extends BaseService {
   isActiveRouter(): Observable<boolean> {
     this.sessionData = storage.get(this.localStorageKey)
     if (this.sessionData === undefined) {
-      return Observable.apply(false)
+      window.location.href = this.loginRoot
     }
     const userName = this.sessionData.userData.userName
     const token = this.sessionData.accsss_token

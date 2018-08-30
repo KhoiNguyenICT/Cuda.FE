@@ -20,10 +20,10 @@
     "@angular/platform-browser": "^6.1.0",
     "@angular/platform-browser-dynamic": "^6.1.0",
     "@angular/router": "^6.1.0",
-    "@ngx-progressbar/core": "^5.0.1",
     "core-js": "^2.5.4",
     "jwt-decode": "^2.2.0",
     "ngx-bootstrap": "^3.0.1",
+    "ngx-progressbar": "^2.1.1",
     "ngx-toastr": "^9.0.2",
     "rxjs": "^6.0.0",
     "zone.js": "~0.8.26"

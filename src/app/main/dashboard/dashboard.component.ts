@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core'
+import { ToastrService } from 'ngx-toastr'
 
 @Component({
   selector: 'app-dashboard',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core'
 })
 export class DashboardComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private toastr: ToastrService
+  ) { }
 
   ngOnInit() {
+    setTimeout(() => this.toastr.success('Welcome!'))
   }
 
 }
