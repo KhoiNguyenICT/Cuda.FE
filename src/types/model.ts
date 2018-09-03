@@ -8,7 +8,7 @@ export interface UserData {
 
 export interface SessionData {
     userData: UserData
-    accessToken: string
+    access_token: string
 }
 
 export interface EntityList<T> {
