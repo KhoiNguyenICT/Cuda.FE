@@ -16,11 +16,9 @@ export class BaseInterceptor implements HttpInterceptor {
         const token = this.sessionData.accsss_token
         const newRequest = req.clone({
             headers: req.headers.set(
-                'Authorization', token
+                'Authorization', `bearer ${token}`
             )
         })
-        console.log(req)
-        console.log(newRequest)
         return next.handle(newRequest)
     }
 }
