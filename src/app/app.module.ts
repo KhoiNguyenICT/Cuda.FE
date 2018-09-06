@@ -1,4 +1,4 @@
-import { BaseInterceptor } from './core/services/base.interceptor';
+import { AppInterceptor } from './app.interceptor'
 import { ApiConfig } from './core/services/api-config'
 import { AppComponent } from './app.component'
 import { AppGuard } from './app.guard'
@@ -50,7 +50,7 @@ import { ToastrService, ToastrModule } from 'ngx-toastr'
     },
     {
       provide: HTTP_INTERCEPTORS,
-      useClass: BaseInterceptor,
+      useClass: AppInterceptor,
       multi: true
     }
   ],

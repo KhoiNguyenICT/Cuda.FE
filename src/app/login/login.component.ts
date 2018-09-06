@@ -23,7 +23,7 @@ export class LoginComponent implements OnInit {
     const userData = this.decodeToken(this.token)
     const sessionData = {
       userData: userData,
-      accsss_token: this.token
+      access_token: this.token
     }
     this.sessionService.refreshSession(sessionData)
     this.router.navigate(['/main/dashboard'])

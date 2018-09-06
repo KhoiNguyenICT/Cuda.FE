@@ -28,7 +28,7 @@ export class AuthService extends BaseService {
       window.location.href = this.loginRoot
     }
     const userName = this.sessionData.userData.userName
-    const token = this.sessionData.accsss_token
+    const token = this.sessionData.access_token
 
     const params = { userName, token }
 
